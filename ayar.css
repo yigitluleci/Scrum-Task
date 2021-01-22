@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+.mob,
+.btn {
+    display: none;
+}
+
+
+.genel nav.desk,
+.genel nav.mob {
+    position: fixed;
+    top: 60;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.50);
+}
+
+nav.desk ul {
+    width: 100%;
+    height: 60px;
+    list-style: none;
+    margin: 0 auto;
+    
+}
+
+nav.desk ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+nav.desk ul li:hover,
+nav.mob ul li:hover {
+    background: tomato;
+}
+
+@media screen and (max-width:750px) {
+
+    nav.desk {
+        display: none;
+    }
+
+    .mob,
+    .btn {
+        display: block;
+    }
+
+    .btn {
+        position: relative
+    }
+
+    .hamburger-btn .fa-bars,
+    .hamburger-btn .fa-times {
+        position: fixed;
+        right: 25px;
+        top: 15px;
+        font-size: 35px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .mob ul {
+
+        margin-top: 60px;
+        background: gray;
+        display: none;
+    }
+
+    .mob ul li {
+        text-align: center;
+        padding: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .mob ul.aktif {
+        display: block;
+    }
+
+    .header {
+        text-align: center;
+        margin: 120px;
+    }
+
+
+}
+
+#header {
+    text-align: center;
+    margin: -60px;
+    font-size: 50px;
+
+}
+
+
+#anasayfa {
+    color: whitesmoke;
+    width: 70%;
+    padding: 20px;
+    display: block;
+    margin: 100px auto;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.9em;
+}
+
+#info {
+    color: whitesmoke;
+    width: 70%;
+    padding: 20px;
+    display: block;
+    margin: 100px auto;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.9em;
+}
+
+#info h2 {
+    text-align: center;
+}
+
+#signin {
+    color: whitesmoke;
+    width: 40%;
+    padding: 20px;
+    display: block;
+    margin: 100px auto;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.9em;
+}
+
+#map{
+    color: whitesmoke;
+    width: 70%;
+    padding: 20px;
+    display: block;
+    margin: 100px auto;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.9em;
+}
+
+
